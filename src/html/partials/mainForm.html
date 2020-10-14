@@ -1,9 +1,11 @@
 <div>
-  <div class="mainMenu mainMenuForm">
-    <span class="mainMenu__icon"
-      ><i class="far fa-keyboard" aria-hidden="true"></i
-    ></span>
-    <h3 class="mainMenu__title mainMenuForm__title">Rellena</h3>
+  <div class="mainMenu">
+    <div class="mainMenu__iconTitle">
+      <span class="mainMenu__iconTitle--icon"
+        ><i class="far fa-keyboard" aria-hidden="true"></i
+      ></span>
+      <h3 class="mainMenu__iconTitle--title">Rellena</h3>
+    </div>
     <button class="mainMenu__button">
       <!-- <i class="fas fa-chevron-down"></i> -->
       <i class="fas fa-chevron-up"></i>
@@ -17,7 +19,7 @@
       id="fullName"
       type="text"
       name="fullName"
-      placeholder="Ej.: Jack Skellington"
+      placeholder="Ej.: Sally Hill"
       required
     />
     <label class="form__label" for="position">Puesto</label>
@@ -26,11 +28,11 @@
       id="position"
       type="text"
       name="position"
-      placeholder="Ej.: Halloween guardian"
+      placeholder="Ej.: Front-end unicorn"
       required
     />
     <label class="form__label labelImage" for="img">Imagen de perfil</label>
-    <div class="wrapperImage">
+    <div class="form__wrapperImage">
       <div class="action">
         <button class="action__upload-btn js__profile-trigger" type="button">
           Añadir imagen
@@ -47,13 +49,13 @@
         <div class="profile__preview js__profile-preview"></div>
       </div>
     </div>
-    <label class="form__label" for="emailAddress">Email</label>
+    <label class="form__label" for="emailAddress">E-mail</label>
     <input
       class="form__input"
       id="emailAddress"
       type="email"
       name="emailAddress"
-      placeholder="Ej.: jack.skellington@gmail.com"
+      placeholder="Ej.: sally-hill@gmail.com"
       required
     />
     <label class="form__label" for="telephone">Teléfono</label>
@@ -62,7 +64,7 @@
       id="telephone"
       type="tel"
       name="telephone"
-      placeholder="Ej.: 666-66-66-66"
+      placeholder="Ej.: 555-55-55-55"
       required
     />
 
@@ -72,7 +74,7 @@
       id="linkedin"
       type="text"
       name="linkedin"
-      placeholder="Ej.: linkedin.com/jackSkellington"
+      placeholder="Ej.: linkedin.com/in/sally.hill"
     />
     <label class="form__label" for="github">GitHub</label>
     <input
@@ -80,7 +82,7 @@
       id="github"
       type="text"
       name="github"
-      placeholder="Ej.: @jack.skellington"
+      placeholder="Ej.: @sally-hill"
     />
   </form>
 </div>
