@@ -16,7 +16,7 @@ function saveField(event) {
 }
 
 for (const eachItem of inputList) {
-  eachItem.addEventListener("keydown", saveField);
+  eachItem.addEventListener("keyup", saveField);
 }
 
 function addName() {
