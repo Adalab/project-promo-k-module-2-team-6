@@ -1,16 +1,8 @@
 <div>
-  <div class="mainMenu">
-    <div class="mainMenu__iconTitle">
-      <span class="mainMenu__iconTitle--icon"
-        ><i class="fas fa-share-alt" aria-hidden="true"></i>
-      </span>
-      <h3 class="mainMenu__iconTitle--title">Comparte</h3>
-    </div>
-    <button class="mainMenu__button js-button">
-      <i class="fas fa-chevron-up"></i>
-    </button>
-  </div>
-  <div class="collapsableShare">
+  <include src="./menu.html" icon="fas fa-share-alt" title="Comparte">
+  </include>
+  <section class="collapsableShare hideCollapsable js-mainCollapsable">
+    <!--A esta clase hay que QUITARLE hideCollapsable con JS para desplegarla-->
     <button class="collapsableShare__btn">
       <i class="far fa-address-card" aria-hidden="true"></i>
       Crear tarjeta
@@ -25,5 +17,5 @@
         Compartir en Twitter
       </a>
     </div>
-  </div>
+  </section>
 </div>

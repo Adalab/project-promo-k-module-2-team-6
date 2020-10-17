@@ -1,13 +1,17 @@
 "use strict";
 console.log("Hola mundo");
 
-const arrow = document.querySelector(".js-button");
+const arrow = document.querySelectorAll(".js-button");
 const collapsable = document.querySelector(".js-mainCollapsable");
 
-function rotateArrow() {
-  arrow.classList.toggle("changeArrow");
-  collapsable.classList.toggle("showCollapsable");
-  console.log("dentro");
+function getCollapsable(event) {
+  event.currentTarget.classList.toggle("changeArrow");
+  collapsable.classList.toggle("hideCollapsable");
+  console.log(event.currentTarget);
 }
 
-arrow.addEventListener("click", rotateArrow);
+// for (let i = 0; i < arrow.length; i++) {
+//   arrow[i].addEventListener("click", getCollapsable);
+// }
+
+// ---------- ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ESTO FUNCIONA Y NO SE QUITA!!!!!!!!!!!! --------------
